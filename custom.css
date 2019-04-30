@@ -141,14 +141,72 @@ body {
 
 .icon-container {
   width: 100%;
-  height: 65vh;
+  padding: 100px 0;
   background-color: var(--light);
   display: flex;
-  align-items: center;
+  align-items: baseline;
   justify-content: center;
   flex-flow: row wrap;
 }
 .icon-info {
   width: 65%;
   text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 250px;
+  width: 300px;
+  margin: 50px 50px;
+}
+.options-icon {
+  color: var(--blue);
+  font-size: 5em;
+  margin-bottom: 35px;  
+}
+.subsection-title {
+  font-size: 2.3em;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.icon-text {
+  font-weight: 300;
+  color: var(--dark);
+  font-size: 1.3em;
+}
+.my-link {
+  text-decoration: none;
+  color: var(--blue);
+}
+
+/* Options Detail Showcase */
+
+.img-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  width: 100%;
+  background: var(--light);
+}
+.info {
+  padding: 75px;
+}
+@media (min-width: 1024px) {
+  .img-right {
+    flex-direction: row;
+  }
+  .img-left {
+    flex-direction: row-reverse;
+  }
+  .info, .showcase {
+    width: 50%;
+  }
+}
+
+/* Testimonials */
+
+.testimonial-container {
+  background: var(--light);
+  padding: 100px 0;
 }
