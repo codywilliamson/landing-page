@@ -34,4 +34,121 @@
 
 :root {
   --font: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --blue: #007bff;
+  --grey: #868e96;
+  --light: #f8f9fa;
+  --dark: #343a40;
+  --heroBg: url('imgs/hero-bg.jpg');
+}
+
+body {
+  font-family: var(--font);
+}
+
+/* Header Nav */
+.nav-container {
+  background: var(--light);
+  height: 80px;
+  font-family: var(--font);
+}
+.nav-items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.nav-item {
+  margin: 25px 20px;
+}
+.nav-link {
+  text-decoration: none;
+}
+.company {
+  font-size: 1.8em;
+  color: #111;
+  font-weight: 700;
+}
+.sign-in {
+  background: var(--blue);
+  color: var(--light);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.3em;
+}
+
+/* Hero section */
+
+.hero-section {
+  background: var(--heroBg) no-repeat center center;
+  background-color: #343a40;
+  background-size: cover;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--light);
+}
+.site-call {
+  font-size: 2.8em;
+  font-weight: 700;
+  padding-bottom: 1em;
+  margin: 0 auto;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.signup-email, .signup-button {
+  width: 300px;
+  margin: 3px auto;
+  padding: 10px 5px;
+  font-size: 1.3em;
+  border-radius: 5px;
+  font-family: var(--font);
+}
+.signup-email:focus {
+  outline: none;
+  border: 2px solid var(--blue);
+  box-shadow: 0 0 3px #666;
+}
+.signup-button {
+  background: var(--blue);
+  border: none;
+  color: var(--light);
+  font-size: 1.5em;
+}
+.signup-button:hover {
+  cursor: pointer;
+  background: #0062cc;
+}
+@media (min-width: 768px) {
+  .site-call {
+    font-size: 3em;
+    width: 700px;
+  }
+  .signup-email, .signup-button {
+    width: 600px;
+  }
+}
+
+/* Options showcase */
+
+.icon-container {
+  width: 100%;
+  height: 65vh;
+  background-color: var(--light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+.icon-info {
+  width: 65%;
+  text-align: center;
 }
